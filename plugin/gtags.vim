@@ -395,7 +395,7 @@ function! s:ExecLoad(option, long_option, pattern)
     " Parse the output of 'global -x or -t' and show in the quickfix window.
     let l:efm_org = &efm
     let &efm = g:Gtags_Efm
-    cexpr! l:result
+    cexpr l:result
     let &efm = l:efm_org
 endfunction
 
